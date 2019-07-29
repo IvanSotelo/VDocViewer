@@ -1,23 +1,23 @@
 const output = {
-  globalObject: "this",
-};
+  globalObject: 'this'
+}
 
-const publicPath = process.env.WEBPACK_PUBLIC_PATH || '/';
+const publicPath = process.env.WEBPACK_PUBLIC_PATH || '/'
 
 module.exports = {
   publicPath,
   configureWebpack: {
     devServer: {
       watchOptions: {
-        poll: true,
-      },
+        poll: true
+      }
     },
-    output,
+    output
   },
   chainWebpack: config => {
     config.module
       .rule('svg')
       .use('file-loader')
-        .loader('vue-svg-loader')
-  },
-};
+      .loader('vue-svg-loader')
+  }
+}
