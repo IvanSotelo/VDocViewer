@@ -14,7 +14,7 @@
     "release": "npm run build-bundle && standard-version && git push --follow-tags && npm publish",
     "build": "vue-cli-service build",
     "build-bundle": "vue-cli-service build --target lib --name VDocViewer ./src/index.js",
-    "lint": "vue-cli-service lint",
+    "lint": "vue-cli-service lint --fix",
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit",
     "postinstall": "controlla-postinstall || exit 0"
@@ -26,7 +26,9 @@
   "dependencies": {
     "@controlla/controlla-postinstall": "^1.0.21",
     "core-js": "^2.6.5",
-    "vue": "^2.6.10"
+    "pdfjs-dist": "^2.0.943",
+    "vue": "^2.6.10",
+    "vuemerang": "^1.7.5"
   },
   "files": [
     "dist/*",
@@ -57,9 +59,12 @@
     "husky": "^2.2.0",
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
     "standard-version": "^6.0.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
+    "vue-svg-loader": "^0.5.0",
     "vue-template-compiler": "^2.6.10"
   },
   "husky": {

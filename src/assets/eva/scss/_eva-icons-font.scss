@@ -1,0 +1,2561 @@
+@font-face {
+    font-family: #{$eva-icons-font-family};
+    src: url('#{$eva-icons-font-path}/Eva-Icons.eot');
+    src: url('#{$eva-icons-font-path}/Eva-Icons.eot?#iefix') format('embedded-opentype'), url('#{$eva-icons-font-path}/Eva-Icons.woff') format('woff'), url('#{$eva-icons-font-path}/Eva-Icons.ttf') format('truetype'), url('#{$eva-icons-font-path}/Eva-Icons.svg#Eva-Icons') format('svg');
+    font-style: normal;
+    font-weight: 400;
+}
+
+.eva {
+  font-family: eva-icons!important;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.eva-lg {
+    vertical-align: -15%;
+    line-height: 0.75em;
+    font-size: 1.33333333em;
+}
+
+.eva-2x {
+    font-size: 2em;
+}
+
+.eva-3x {
+    font-size: 3em;
+}
+
+.eva-4x {
+    font-size: 4em;
+}
+
+.eva-5x {
+    font-size: 5em;
+}
+
+.eva-fw {
+    width: 1.28571429em;
+    text-align: center;
+}
+
+.eva-activity-outline {
+  &:before {
+    content: $eva-activity-outline;
+  }
+}
+.eva-alert-circle-outline {
+  &:before {
+    content: $eva-alert-circle-outline;
+  }
+}
+.eva-alert-triangle-outline {
+  &:before {
+    content: $eva-alert-triangle-outline;
+  }
+}
+.eva-archive-outline {
+  &:before {
+    content: $eva-archive-outline;
+  }
+}
+.eva-arrow-back-outline {
+  &:before {
+    content: $eva-arrow-back-outline;
+  }
+}
+.eva-arrow-circle-down-outline {
+  &:before {
+    content: $eva-arrow-circle-down-outline;
+  }
+}
+.eva-arrow-circle-left-outline {
+  &:before {
+    content: $eva-arrow-circle-left-outline;
+  }
+}
+.eva-arrow-circle-right-outline {
+  &:before {
+    content: $eva-arrow-circle-right-outline;
+  }
+}
+.eva-arrow-circle-up-outline {
+  &:before {
+    content: $eva-arrow-circle-up-outline;
+  }
+}
+.eva-arrow-down-outline {
+  &:before {
+    content: $eva-arrow-down-outline;
+  }
+}
+.eva-arrow-downward-outline {
+  &:before {
+    content: $eva-arrow-downward-outline;
+  }
+}
+.eva-arrow-forward-outline {
+  &:before {
+    content: $eva-arrow-forward-outline;
+  }
+}
+.eva-arrowhead-down-outline {
+  &:before {
+    content: $eva-arrowhead-down-outline;
+  }
+}
+.eva-arrowhead-left-outline {
+  &:before {
+    content: $eva-arrowhead-left-outline;
+  }
+}
+.eva-arrowhead-right-outline {
+  &:before {
+    content: $eva-arrowhead-right-outline;
+  }
+}
+.eva-arrowhead-up-outline {
+  &:before {
+    content: $eva-arrowhead-up-outline;
+  }
+}
+.eva-arrow-ios-back-outline {
+  &:before {
+    content: $eva-arrow-ios-back-outline;
+  }
+}
+.eva-arrow-ios-downward-outline {
+  &:before {
+    content: $eva-arrow-ios-downward-outline;
+  }
+}
+.eva-arrow-ios-forward-outline {
+  &:before {
+    content: $eva-arrow-ios-forward-outline;
+  }
+}
+.eva-arrow-ios-upward-outline {
+  &:before {
+    content: $eva-arrow-ios-upward-outline;
+  }
+}
+.eva-arrow-left-outline {
+  &:before {
+    content: $eva-arrow-left-outline;
+  }
+}
+.eva-arrow-right-outline {
+  &:before {
+    content: $eva-arrow-right-outline;
+  }
+}.eva-activity-outline {
+  &:before {
+    content: $eva-activity-outline;
+  }
+}
+.eva-alert-circle-outline {
+  &:before {
+    content: $eva-alert-circle-outline;
+  }
+}
+.eva-alert-triangle-outline {
+  &:before {
+    content: $eva-alert-triangle-outline;
+  }
+}
+.eva-archive-outline {
+  &:before {
+    content: $eva-archive-outline;
+  }
+}
+.eva-arrow-back-outline {
+  &:before {
+    content: $eva-arrow-back-outline;
+  }
+}
+.eva-arrow-circle-down-outline {
+  &:before {
+    content: $eva-arrow-circle-down-outline;
+  }
+}
+.eva-arrow-circle-left-outline {
+  &:before {
+    content: $eva-arrow-circle-left-outline;
+  }
+}
+.eva-arrow-circle-right-outline {
+  &:before {
+    content: $eva-arrow-circle-right-outline;
+  }
+}
+.eva-arrow-circle-up-outline {
+  &:before {
+    content: $eva-arrow-circle-up-outline;
+  }
+}
+.eva-arrow-down-outline {
+  &:before {
+    content: $eva-arrow-down-outline;
+  }
+}
+.eva-arrow-downward-outline {
+  &:before {
+    content: $eva-arrow-downward-outline;
+  }
+}
+.eva-arrow-forward-outline {
+  &:before {
+    content: $eva-arrow-forward-outline;
+  }
+}
+.eva-arrowhead-down-outline {
+  &:before {
+    content: $eva-arrowhead-down-outline;
+  }
+}
+.eva-arrowhead-left-outline {
+  &:before {
+    content: $eva-arrowhead-left-outline;
+  }
+}
+.eva-arrowhead-right-outline {
+  &:before {
+    content: $eva-arrowhead-right-outline;
+  }
+}
+.eva-arrow-up-outline {
+  &:before {
+    content: $eva-arrow-up-outline;
+  }
+}
+.eva-arrow-upward-outline {
+  &:before {
+    content: $eva-arrow-upward-outline;
+  }
+}
+.eva-at-outline {
+  &:before {
+    content: $eva-at-outline;
+  }
+}
+.eva-attach-2-outline {
+  &:before {
+    content: $eva-attach-2-outline;
+  }
+}
+.eva-attach-outline {
+  &:before {
+    content: $eva-attach-outline;
+  }
+}
+.eva-award-outline {
+  &:before {
+    content: $eva-award-outline;
+  }
+}
+.eva-backspace-outline {
+  &:before {
+    content: $eva-backspace-outline;
+  }
+}
+.eva-bar-chart-2-outline {
+  &:before {
+    content: $eva-bar-chart-2-outline;
+  }
+}
+.eva-bar-chart-outline {
+  &:before {
+    content: $eva-bar-chart-outline;
+  }
+}
+.eva-battery-outline {
+  &:before {
+    content: $eva-battery-outline;
+  }
+}
+.eva-behance-outline {
+  &:before {
+    content: $eva-behance-outline;
+  }
+}
+.eva-bell-off-outline {
+  &:before {
+    content: $eva-bell-off-outline;
+  }
+}
+.eva-bell-outline {
+  &:before {
+    content: $eva-bell-outline;
+  }
+}
+.eva-bluetooth-outline {
+  &:before {
+    content: $eva-bluetooth-outline;
+  }
+}
+.eva-bookmark-outline {
+  &:before {
+    content: $eva-bookmark-outline;
+  }
+}
+.eva-book-open-outline {
+  &:before {
+    content: $eva-book-open-outline;
+  }
+}
+.eva-book-outline {
+  &:before {
+    content: $eva-book-outline;
+  }
+}
+.eva-briefcase-outline {
+  &:before {
+    content: $eva-briefcase-outline;
+  }
+}
+.eva-browser-outline {
+  &:before {
+    content: $eva-browser-outline;
+  }
+}
+.eva-brush-outline {
+  &:before {
+    content: $eva-brush-outline;
+  }
+}
+.eva-bulb-outline {
+  &:before {
+    content: $eva-bulb-outline;
+  }
+}
+.eva-calendar-outline {
+  &:before {
+    content: $eva-calendar-outline;
+  }
+}
+.eva-camera-outline {
+  &:before {
+    content: $eva-camera-outline;
+  }
+}
+.eva-car-outline {
+  &:before {
+    content: $eva-car-outline;
+  }
+}
+.eva-cast-outline {
+  &:before {
+    content: $eva-cast-outline;
+  }
+}
+.eva-charging-outline {
+  &:before {
+    content: $eva-charging-outline;
+  }
+}
+.eva-checkmark-circle-2-outline {
+  &:before {
+    content: $eva-checkmark-circle-2-outline;
+  }
+}
+.eva-checkmark-circle-outline {
+  &:before {
+    content: $eva-checkmark-circle-outline;
+  }
+}
+.eva-checkmark-outline {
+  &:before {
+    content: $eva-checkmark-outline;
+  }
+}
+.eva-checkmark-square-2-outline {
+  &:before {
+    content: $eva-checkmark-square-2-outline;
+  }
+}
+.eva-checkmark-square-outline {
+  &:before {
+    content: $eva-checkmark-square-outline;
+  }
+}
+.eva-chevron-down-outline {
+  &:before {
+    content: $eva-chevron-down-outline;
+  }
+}
+.eva-chevron-left-outline {
+  &:before {
+    content: $eva-chevron-left-outline;
+  }
+}
+.eva-chevron-right-outline {
+  &:before {
+    content: $eva-chevron-right-outline;
+  }
+}
+.eva-chevron-up-outline {
+  &:before {
+    content: $eva-chevron-up-outline;
+  }
+}
+.eva-clipboard-outline {
+  &:before {
+    content: $eva-clipboard-outline;
+  }
+}
+.eva-clock-outline {
+  &:before {
+    content: $eva-clock-outline;
+  }
+}
+.eva-close-circle-outline {
+  &:before {
+    content: $eva-close-circle-outline;
+  }
+}
+.eva-close-outline {
+  &:before {
+    content: $eva-close-outline;
+  }
+}
+.eva-close-square-outline {
+  &:before {
+    content: $eva-close-square-outline;
+  }
+}
+.eva-cloud-download-outline {
+  &:before {
+    content: $eva-cloud-download-outline;
+  }
+}
+.eva-cloud-upload-outline {
+  &:before {
+    content: $eva-cloud-upload-outline;
+  }
+}
+.eva-code-download-outline {
+  &:before {
+    content: $eva-code-download-outline;
+  }
+}
+.eva-code-outline {
+  &:before {
+    content: $eva-code-outline;
+  }
+}
+.eva-collapse-outline {
+  &:before {
+    content: $eva-collapse-outline;
+  }
+}
+.eva-color-palette-outline {
+  &:before {
+    content: $eva-color-palette-outline;
+  }
+}
+.eva-color-picker-outline {
+  &:before {
+    content: $eva-color-picker-outline;
+  }
+}
+.eva-compass-outline {
+  &:before {
+    content: $eva-compass-outline;
+  }
+}
+.eva-copy-outline {
+  &:before {
+    content: $eva-copy-outline;
+  }
+}
+.eva-corner-down-left-outline {
+  &:before {
+    content: $eva-corner-down-left-outline;
+  }
+}
+.eva-corner-down-right-outline {
+  &:before {
+    content: $eva-corner-down-right-outline;
+  }
+}
+.eva-corner-left-down-outline {
+  &:before {
+    content: $eva-corner-left-down-outline;
+  }
+}
+.eva-corner-left-up-outline {
+  &:before {
+    content: $eva-corner-left-up-outline;
+  }
+}
+.eva-corner-right-down-outline {
+  &:before {
+    content: $eva-corner-right-down-outline;
+  }
+}
+.eva-corner-right-up-outline {
+  &:before {
+    content: $eva-corner-right-up-outline;
+  }
+}
+.eva-corner-up-left-outline {
+  &:before {
+    content: $eva-corner-up-left-outline;
+  }
+}
+.eva-corner-up-right-outline {
+  &:before {
+    content: $eva-corner-up-right-outline;
+  }
+}
+.eva-credit-card-outline {
+  &:before {
+    content: $eva-credit-card-outline;
+  }
+}
+.eva-crop-outline {
+  &:before {
+    content: $eva-crop-outline;
+  }
+}
+.eva-cube-outline {
+  &:before {
+    content: $eva-cube-outline;
+  }
+}
+.eva-diagonal-arrow-left-down-outline {
+  &:before {
+    content: $eva-diagonal-arrow-left-down-outline;
+  }
+}
+.eva-diagonal-arrow-left-up-outline {
+  &:before {
+    content: $eva-diagonal-arrow-left-up-outline;
+  }
+}
+.eva-diagonal-arrow-right-down-outline {
+  &:before {
+    content: $eva-diagonal-arrow-right-down-outline;
+  }
+}
+.eva-diagonal-arrow-right-up-outline {
+  &:before {
+    content: $eva-diagonal-arrow-right-up-outline;
+  }
+}
+.eva-done-all-outline {
+  &:before {
+    content: $eva-done-all-outline;
+  }
+}
+.eva-download-outline {
+  &:before {
+    content: $eva-download-outline;
+  }
+}
+.eva-droplet-off-outline {
+  &:before {
+    content: $eva-droplet-off-outline;
+  }
+}
+.eva-droplet-outline {
+  &:before {
+    content: $eva-droplet-outline;
+  }
+}
+.eva-edit-2-outline {
+  &:before {
+    content: $eva-edit-2-outline;
+  }
+}
+.eva-edit-outline {
+  &:before {
+    content: $eva-edit-outline;
+  }
+}
+.eva-email-outline {
+  &:before {
+    content: $eva-email-outline;
+  }
+}
+.eva-expand-outline {
+  &:before {
+    content: $eva-expand-outline;
+  }
+}
+.eva-external-link-outline {
+  &:before {
+    content: $eva-external-link-outline;
+  }
+}
+.eva-eye-off-2-outline {
+  &:before {
+    content: $eva-eye-off-2-outline;
+  }
+}
+.eva-eye-off-outline {
+  &:before {
+    content: $eva-eye-off-outline;
+  }
+}
+.eva-eye-outline {
+  &:before {
+    content: $eva-eye-outline;
+  }
+}
+.eva-facebook-outline {
+  &:before {
+    content: $eva-facebook-outline;
+  }
+}
+.eva-file-add-outline {
+  &:before {
+    content: $eva-file-add-outline;
+  }
+}
+.eva-file-outline {
+  &:before {
+    content: $eva-file-outline;
+  }
+}
+.eva-file-remove-outline {
+  &:before {
+    content: $eva-file-remove-outline;
+  }
+}
+.eva-file-text-outline {
+  &:before {
+    content: $eva-file-text-outline;
+  }
+}
+.eva-film-outline {
+  &:before {
+    content: $eva-film-outline;
+  }
+}
+.eva-flag-outline {
+  &:before {
+    content: $eva-flag-outline;
+  }
+}
+.eva-flash-off-outline {
+  &:before {
+    content: $eva-flash-off-outline;
+  }
+}
+.eva-flash-outline {
+  &:before {
+    content: $eva-flash-outline;
+  }
+}
+.eva-flip-2-outline {
+  &:before {
+    content: $eva-flip-2-outline;
+  }
+}
+.eva-flip-outline {
+  &:before {
+    content: $eva-flip-outline;
+  }
+}
+.eva-folder-add-outline {
+  &:before {
+    content: $eva-folder-add-outline;
+  }
+}
+.eva-folder-outline {
+  &:before {
+    content: $eva-folder-outline;
+  }
+}
+.eva-folder-remove-outline {
+  &:before {
+    content: $eva-folder-remove-outline;
+  }
+}
+.eva-funnel-outline {
+  &:before {
+    content: $eva-funnel-outline;
+  }
+}
+.eva-gift-outline {
+  &:before {
+    content: $eva-gift-outline;
+  }
+}
+.eva-github-outline {
+  &:before {
+    content: $eva-github-outline;
+  }
+}
+.eva-globe-2-outline {
+  &:before {
+    content: $eva-globe-2-outline;
+  }
+}
+.eva-globe-outline {
+  &:before {
+    content: $eva-globe-outline;
+  }
+}
+.eva-google-outline {
+  &:before {
+    content: $eva-google-outline;
+  }
+}
+.eva-grid-outline {
+  &:before {
+    content: $eva-grid-outline;
+  }
+}
+.eva-hard-drive-outline {
+  &:before {
+    content: $eva-hard-drive-outline;
+  }
+}
+.eva-hash-outline {
+  &:before {
+    content: $eva-hash-outline;
+  }
+}
+.eva-headphones-outline {
+  &:before {
+    content: $eva-headphones-outline;
+  }
+}
+.eva-heart-outline {
+  &:before {
+    content: $eva-heart-outline;
+  }
+}
+.eva-home-outline {
+  &:before {
+    content: $eva-home-outline;
+  }
+}
+.eva-image-outline {
+  &:before {
+    content: $eva-image-outline;
+  }
+}
+.eva-inbox-outline {
+  &:before {
+    content: $eva-inbox-outline;
+  }
+}
+.eva-info-outline {
+  &:before {
+    content: $eva-info-outline;
+  }
+}
+.eva-keypad-outline {
+  &:before {
+    content: $eva-keypad-outline;
+  }
+}
+.eva-layers-outline {
+  &:before {
+    content: $eva-layers-outline;
+  }
+}
+.eva-layout-outline {
+  &:before {
+    content: $eva-layout-outline;
+  }
+}
+.eva-link-2-outline {
+  &:before {
+    content: $eva-link-2-outline;
+  }
+}
+.eva-linkedin-outline {
+  &:before {
+    content: $eva-linkedin-outline;
+  }
+}
+.eva-link-outline {
+  &:before {
+    content: $eva-link-outline;
+  }
+}
+.eva-list-outline {
+  &:before {
+    content: $eva-list-outline;
+  }
+}
+.eva-loader-outline {
+  &:before {
+    content: $eva-loader-outline;
+  }
+}
+.eva-lock-outline {
+  &:before {
+    content: $eva-lock-outline;
+  }
+}
+.eva-log-in-outline {
+  &:before {
+    content: $eva-log-in-outline;
+  }
+}
+.eva-log-out-outline {
+  &:before {
+    content: $eva-log-out-outline;
+  }
+}
+.eva-map-outline {
+  &:before {
+    content: $eva-map-outline;
+  }
+}
+.eva-maximize-outline {
+  &:before {
+    content: $eva-maximize-outline;
+  }
+}
+.eva-menu-2-outline {
+  &:before {
+    content: $eva-menu-2-outline;
+  }
+}
+.eva-menu-arrow-outline {
+  &:before {
+    content: $eva-menu-arrow-outline;
+  }
+}
+.eva-menu-outline {
+  &:before {
+    content: $eva-menu-outline;
+  }
+}
+.eva-message-circle-outline {
+  &:before {
+    content: $eva-message-circle-outline;
+  }
+}
+.eva-message-square-outline {
+  &:before {
+    content: $eva-message-square-outline;
+  }
+}
+.eva-mic-off-outline {
+  &:before {
+    content: $eva-mic-off-outline;
+  }
+}
+.eva-mic-outline {
+  &:before {
+    content: $eva-mic-outline;
+  }
+}
+.eva-minimize-outline {
+  &:before {
+    content: $eva-minimize-outline;
+  }
+}
+.eva-minus-circle-outline {
+  &:before {
+    content: $eva-minus-circle-outline;
+  }
+}
+.eva-minus-outline {
+  &:before {
+    content: $eva-minus-outline;
+  }
+}
+.eva-minus-square-outline {
+  &:before {
+    content: $eva-minus-square-outline;
+  }
+}
+.eva-monitor-outline {
+  &:before {
+    content: $eva-monitor-outline;
+  }
+}
+.eva-moon-outline {
+  &:before {
+    content: $eva-moon-outline;
+  }
+}
+.eva-more-horizotnal-outline {
+  &:before {
+    content: $eva-more-horizotnal-outline;
+  }
+}
+.eva-more-vertical-outline {
+  &:before {
+    content: $eva-more-vertical-outline;
+  }
+}
+.eva-move-outline {
+  &:before {
+    content: $eva-move-outline;
+  }
+}
+.eva-music-outline {
+  &:before {
+    content: $eva-music-outline;
+  }
+}
+.eva-navigation-2-outline {
+  &:before {
+    content: $eva-navigation-2-outline;
+  }
+}
+.eva-navigation-outline {
+  &:before {
+    content: $eva-navigation-outline;
+  }
+}
+.eva-npm-outline {
+  &:before {
+    content: $eva-npm-outline;
+  }
+}
+.eva-options-2-outline {
+  &:before {
+    content: $eva-options-2-outline;
+  }
+}
+.eva-options-outline {
+  &:before {
+    content: $eva-options-outline;
+  }
+}
+.eva-pantone-outline {
+  &:before {
+    content: $eva-pantone-outline;
+  }
+}
+.eva-paper-plane-outline {
+  &:before {
+    content: $eva-paper-plane-outline;
+  }
+}
+.eva-pause-circle-outline {
+  &:before {
+    content: $eva-pause-circle-outline;
+  }
+}
+.eva-people-outline {
+  &:before {
+    content: $eva-people-outline;
+  }
+}
+.eva-percent-outline {
+  &:before {
+    content: $eva-percent-outline;
+  }
+}
+.eva-person-add-outline {
+  &:before {
+    content: $eva-person-add-outline;
+  }
+}
+.eva-person-delete-outline {
+  &:before {
+    content: $eva-person-delete-outline;
+  }
+}
+.eva-person-done-outline {
+  &:before {
+    content: $eva-person-done-outline;
+  }
+}
+.eva-person-outline {
+  &:before {
+    content: $eva-person-outline;
+  }
+}
+.eva-person-remove-outline {
+  &:before {
+    content: $eva-person-remove-outline;
+  }
+}
+.eva-phone-call-outline {
+  &:before {
+    content: $eva-phone-call-outline;
+  }
+}
+.eva-phone-missed-outline {
+  &:before {
+    content: $eva-phone-missed-outline;
+  }
+}
+.eva-phone-off-outline {
+  &:before {
+    content: $eva-phone-off-outline;
+  }
+}
+.eva-phone-outline {
+  &:before {
+    content: $eva-phone-outline;
+  }
+}
+.eva-pie-chart-outline {
+  &:before {
+    content: $eva-pie-chart-outline;
+  }
+}
+.eva-pin-outline {
+  &:before {
+    content: $eva-pin-outline;
+  }
+}
+.eva-play-circle-outline {
+  &:before {
+    content: $eva-play-circle-outline;
+  }
+}
+.eva-plus-circle-outline {
+  &:before {
+    content: $eva-plus-circle-outline;
+  }
+}
+.eva-plus-outline {
+  &:before {
+    content: $eva-plus-outline;
+  }
+}
+.eva-plus-square-outline {
+  &:before {
+    content: $eva-plus-square-outline;
+  }
+}
+.eva-power-outline {
+  &:before {
+    content: $eva-power-outline;
+  }
+}
+.eva-pricetags-outline {
+  &:before {
+    content: $eva-pricetags-outline;
+  }
+}
+.eva-printer-outline {
+  &:before {
+    content: $eva-printer-outline;
+  }
+}
+.eva-question-mark-circle-outline {
+  &:before {
+    content: $eva-question-mark-circle-outline;
+  }
+}
+.eva-question-mark-outline {
+  &:before {
+    content: $eva-question-mark-outline;
+  }
+}
+.eva-radio-button-off-outline {
+  &:before {
+    content: $eva-radio-button-off-outline;
+  }
+}
+.eva-radio-button-on-outline {
+  &:before {
+    content: $eva-radio-button-on-outline;
+  }
+}
+.eva-radio-outline {
+  &:before {
+    content: $eva-radio-outline;
+  }
+}
+.eva-recording-outline {
+  &:before {
+    content: $eva-recording-outline;
+  }
+}
+.eva-refresh-outline {
+  &:before {
+    content: $eva-refresh-outline;
+  }
+}
+.eva-repeat-outline {
+  &:before {
+    content: $eva-repeat-outline;
+  }
+}
+.eva-rewind-left-outline {
+  &:before {
+    content: $eva-rewind-left-outline;
+  }
+}
+.eva-rewind-right-outline {
+  &:before {
+    content: $eva-rewind-right-outline;
+  }
+}
+.eva-save-outline {
+  &:before {
+    content: $eva-save-outline;
+  }
+}
+.eva-scissors-outline {
+  &:before {
+    content: $eva-scissors-outline;
+  }
+}
+.eva-search-outline {
+  &:before {
+    content: $eva-search-outline;
+  }
+}
+.eva-settings-2-outline {
+  &:before {
+    content: $eva-settings-2-outline;
+  }
+}
+.eva-settings-outline {
+  &:before {
+    content: $eva-settings-outline;
+  }
+}
+.eva-shake-outline {
+  &:before {
+    content: $eva-shake-outline;
+  }
+}
+.eva-share-outline {
+  &:before {
+    content: $eva-share-outline;
+  }
+}
+.eva-shield-off-outline {
+  &:before {
+    content: $eva-shield-off-outline;
+  }
+}
+.eva-shield-outline {
+  &:before {
+    content: $eva-shield-outline;
+  }
+}
+.eva-shopping-bag-outline {
+  &:before {
+    content: $eva-shopping-bag-outline;
+  }
+}
+.eva-shopping-cart-outline {
+  &:before {
+    content: $eva-shopping-cart-outline;
+  }
+}
+.eva-shuffle-2-outline {
+  &:before {
+    content: $eva-shuffle-2-outline;
+  }
+}
+.eva-shuffle-outline {
+  &:before {
+    content: $eva-shuffle-outline;
+  }
+}
+.eva-skip-back-outline {
+  &:before {
+    content: $eva-skip-back-outline;
+  }
+}
+.eva-skip-forward-outline {
+  &:before {
+    content: $eva-skip-forward-outline;
+  }
+}
+.eva-slash-outline {
+  &:before {
+    content: $eva-slash-outline;
+  }
+}
+.eva-smartphone-outline {
+  &:before {
+    content: $eva-smartphone-outline;
+  }
+}
+.eva-speaker-outline {
+  &:before {
+    content: $eva-speaker-outline;
+  }
+}
+.eva-square-outline {
+  &:before {
+    content: $eva-square-outline;
+  }
+}
+.eva-star-outline {
+  &:before {
+    content: $eva-star-outline;
+  }
+}
+.eva-stop-circle-outline {
+  &:before {
+    content: $eva-stop-circle-outline;
+  }
+}
+.eva-sun-outline {
+  &:before {
+    content: $eva-sun-outline;
+  }
+}
+.eva-swap-outline {
+  &:before {
+    content: $eva-swap-outline;
+  }
+}
+.eva-sync-outline {
+  &:before {
+    content: $eva-sync-outline;
+  }
+}
+.eva-text-outline {
+  &:before {
+    content: $eva-text-outline;
+  }
+}
+.eva-thermometer-minus-outline {
+  &:before {
+    content: $eva-thermometer-minus-outline;
+  }
+}
+.eva-thermometer-outline {
+  &:before {
+    content: $eva-thermometer-outline;
+  }
+}
+.eva-thermometer-plus-outline {
+  &:before {
+    content: $eva-thermometer-plus-outline;
+  }
+}
+.eva-toggle-left-outline {
+  &:before {
+    content: $eva-toggle-left-outline;
+  }
+}
+.eva-toggle-right-outline {
+  &:before {
+    content: $eva-toggle-right-outline;
+  }
+}
+.eva-trash-2-outline {
+  &:before {
+    content: $eva-trash-2-outline;
+  }
+}
+.eva-trash-outline {
+  &:before {
+    content: $eva-trash-outline;
+  }
+}
+.eva-trending-down-outline {
+  &:before {
+    content: $eva-trending-down-outline;
+  }
+}
+.eva-trending-up-outline {
+  &:before {
+    content: $eva-trending-up-outline;
+  }
+}
+.eva-tv-outline {
+  &:before {
+    content: $eva-tv-outline;
+  }
+}
+.eva-twitter-outline {
+  &:before {
+    content: $eva-twitter-outline;
+  }
+}
+.eva-umbrella-outline {
+  &:before {
+    content: $eva-umbrella-outline;
+  }
+}
+.eva-undo-outline {
+  &:before {
+    content: $eva-undo-outline;
+  }
+}
+.eva-unlock-outline {
+  &:before {
+    content: $eva-unlock-outline;
+  }
+}
+.eva-upload-outline {
+  &:before {
+    content: $eva-upload-outline;
+  }
+}
+.eva-video-off-outline {
+  &:before {
+    content: $eva-video-off-outline;
+  }
+}
+.eva-video-outline {
+  &:before {
+    content: $eva-video-outline;
+  }
+}
+.eva-volume-down-outline {
+  &:before {
+    content: $eva-volume-down-outline;
+  }
+}
+.eva-volume-mute-outline {
+  &:before {
+    content: $eva-volume-mute-outline;
+  }
+}
+.eva-volume-off-outline {
+  &:before {
+    content: $eva-volume-off-outline;
+  }
+}
+.eva-volume-up-outline {
+  &:before {
+    content: $eva-volume-up-outline;
+  }
+}
+.eva-wifi-off-outline {
+  &:before {
+    content: $eva-wifi-off-outline;
+  }
+}
+.eva-wifi-outline {
+  &:before {
+    content: $eva-wifi-outline;
+  }
+}
+.eva-activity {
+  &:before {
+    content: $eva-activity;
+  }
+}
+.eva-alert-circle {
+  &:before {
+    content: $eva-alert-circle;
+  }
+}
+.eva-alert-triangle {
+  &:before {
+    content: $eva-alert-triangle;
+  }
+}
+.eva-archive {
+  &:before {
+    content: $eva-archive;
+  }
+}
+.eva-arrow-back {
+  &:before {
+    content: $eva-arrow-back;
+  }
+}
+.eva-arrow-circle-down {
+  &:before {
+    content: $eva-arrow-circle-down;
+  }
+}
+.eva-arrow-circle-left {
+  &:before {
+    content: $eva-arrow-circle-left;
+  }
+}
+.eva-arrow-circle-right {
+  &:before {
+    content: $eva-arrow-circle-right;
+  }
+}
+.eva-arrow-circle-up {
+  &:before {
+    content: $eva-arrow-circle-up;
+  }
+}
+.eva-arrow-down {
+  &:before {
+    content: $eva-arrow-down;
+  }
+}
+.eva-arrow-downward {
+  &:before {
+    content: $eva-arrow-downward;
+  }
+}
+.eva-arrow-forward {
+  &:before {
+    content: $eva-arrow-forward;
+  }
+}
+.eva-arrowhead-down {
+  &:before {
+    content: $eva-arrowhead-down;
+  }
+}
+.eva-arrowhead-left {
+  &:before {
+    content: $eva-arrowhead-left;
+  }
+}
+.eva-arrowhead-right {
+  &:before {
+    content: $eva-arrowhead-right;
+  }
+}
+.eva-arrowhead-up {
+  &:before {
+    content: $eva-arrowhead-up;
+  }
+}
+.eva-arrow-ios-back {
+  &:before {
+    content: $eva-arrow-ios-back;
+  }
+}
+.eva-arrow-ios-downward {
+  &:before {
+    content: $eva-arrow-ios-downward;
+  }
+}
+.eva-arrow-ios-forward {
+  &:before {
+    content: $eva-arrow-ios-forward;
+  }
+}
+.eva-arrow-ios-upward {
+  &:before {
+    content: $eva-arrow-ios-upward;
+  }
+}
+.eva-arrow-left {
+  &:before {
+    content: $eva-arrow-left;
+  }
+}
+.eva-arrow-right {
+  &:before {
+    content: $eva-arrow-right;
+  }
+}
+.eva-arrow-up {
+  &:before {
+    content: $eva-arrow-up;
+  }
+}
+.eva-arrow-upward {
+  &:before {
+    content: $eva-arrow-upward;
+  }
+}
+.eva-at {
+  &:before {
+    content: $eva-at;
+  }
+}
+.eva-attach {
+  &:before {
+    content: $eva-attach;
+  }
+}
+.eva-attach-2 {
+  &:before {
+    content: $eva-attach-2;
+  }
+}
+.eva-award {
+  &:before {
+    content: $eva-award;
+  }
+}
+.eva-backspace {
+  &:before {
+    content: $eva-backspace;
+  }
+}
+.eva-bar-chart {
+  &:before {
+    content: $eva-bar-chart;
+  }
+}
+.eva-bar-chart-2 {
+  &:before {
+    content: $eva-bar-chart-2;
+  }
+}
+.eva-battery {
+  &:before {
+    content: $eva-battery;
+  }
+}
+.eva-behance {
+  &:before {
+    content: $eva-behance;
+  }
+}
+.eva-bell {
+  &:before {
+    content: $eva-bell;
+  }
+}
+.eva-bell-off {
+  &:before {
+    content: $eva-bell-off;
+  }
+}
+.eva-bluetooth {
+  &:before {
+    content: $eva-bluetooth;
+  }
+}
+.eva-book {
+  &:before {
+    content: $eva-book;
+  }
+}
+.eva-bookmark {
+  &:before {
+    content: $eva-bookmark;
+  }
+}
+.eva-book-open {
+  &:before {
+    content: $eva-book-open;
+  }
+}
+.eva-briefcase {
+  &:before {
+    content: $eva-briefcase;
+  }
+}
+.eva-browser {
+  &:before {
+    content: $eva-browser;
+  }
+}
+.eva-brush {
+  &:before {
+    content: $eva-brush;
+  }
+}
+.eva-bulb {
+  &:before {
+    content: $eva-bulb;
+  }
+}
+.eva-calendar {
+  &:before {
+    content: $eva-calendar;
+  }
+}
+.eva-camera {
+  &:before {
+    content: $eva-camera;
+  }
+}
+.eva-car {
+  &:before {
+    content: $eva-car;
+  }
+}
+.eva-cast {
+  &:before {
+    content: $eva-cast;
+  }
+}
+.eva-charging {
+  &:before {
+    content: $eva-charging;
+  }
+}
+.eva-checkmark {
+  &:before {
+    content: $eva-checkmark;
+  }
+}
+.eva-checkmark-circle {
+  &:before {
+    content: $eva-checkmark-circle;
+  }
+}
+.eva-checkmark-circle-2 {
+  &:before {
+    content: $eva-checkmark-circle-2;
+  }
+}
+.eva-checkmark-square {
+  &:before {
+    content: $eva-checkmark-square;
+  }
+}
+.eva-checkmark-square-2 {
+  &:before {
+    content: $eva-checkmark-square-2;
+  }
+}
+.eva-chevron-down {
+  &:before {
+    content: $eva-chevron-down;
+  }
+}
+.eva-chevron-left {
+  &:before {
+    content: $eva-chevron-left;
+  }
+}
+.eva-chevron-right {
+  &:before {
+    content: $eva-chevron-right;
+  }
+}
+.eva-chevron-up {
+  &:before {
+    content: $eva-chevron-up;
+  }
+}
+.eva-clipboard {
+  &:before {
+    content: $eva-clipboard;
+  }
+}
+.eva-clock {
+  &:before {
+    content: $eva-clock;
+  }
+}
+.eva-close {
+  &:before {
+    content: $eva-close;
+  }
+}
+.eva-close-circle {
+  &:before {
+    content: $eva-close-circle;
+  }
+}
+.eva-close-square {
+  &:before {
+    content: $eva-close-square;
+  }
+}
+.eva-cloud-download {
+  &:before {
+    content: $eva-cloud-download;
+  }
+}
+.eva-cloud-upload {
+  &:before {
+    content: $eva-cloud-upload;
+  }
+}
+.eva-code {
+  &:before {
+    content: $eva-code;
+  }
+}
+.eva-code-download {
+  &:before {
+    content: $eva-code-download;
+  }
+}
+.eva-collapse {
+  &:before {
+    content: $eva-collapse;
+  }
+}
+.eva-color-palette {
+  &:before {
+    content: $eva-color-palette;
+  }
+}
+.eva-color-picker {
+  &:before {
+    content: $eva-color-picker;
+  }
+}
+.eva-compass {
+  &:before {
+    content: $eva-compass;
+  }
+}
+.eva-copy {
+  &:before {
+    content: $eva-copy;
+  }
+}
+.eva-corner-down-left {
+  &:before {
+    content: $eva-corner-down-left;
+  }
+}
+.eva-corner-down-right {
+  &:before {
+    content: $eva-corner-down-right;
+  }
+}
+.eva-corner-left-down {
+  &:before {
+    content: $eva-corner-left-down;
+  }
+}
+.eva-corner-left-up {
+  &:before {
+    content: $eva-corner-left-up;
+  }
+}
+.eva-corner-right-down {
+  &:before {
+    content: $eva-corner-right-down;
+  }
+}
+.eva-corner-right-up {
+  &:before {
+    content: $eva-corner-right-up;
+  }
+}
+.eva-corner-up-left {
+  &:before {
+    content: $eva-corner-up-left;
+  }
+}
+.eva-corner-up-right {
+  &:before {
+    content: $eva-corner-up-right;
+  }
+}
+.eva-credit-card {
+  &:before {
+    content: $eva-credit-card;
+  }
+}
+.eva-crop {
+  &:before {
+    content: $eva-crop;
+  }
+}
+.eva-cube {
+  &:before {
+    content: $eva-cube;
+  }
+}
+.eva-diagonal-arrow-left-down {
+  &:before {
+    content: $eva-diagonal-arrow-left-down;
+  }
+}
+.eva-diagonal-arrow-left-up {
+  &:before {
+    content: $eva-diagonal-arrow-left-up;
+  }
+}
+.eva-diagonal-arrow-right-down {
+  &:before {
+    content: $eva-diagonal-arrow-right-down;
+  }
+}
+.eva-diagonal-arrow-right-up {
+  &:before {
+    content: $eva-diagonal-arrow-right-up;
+  }
+}
+.eva-done-all {
+  &:before {
+    content: $eva-done-all;
+  }
+}
+.eva-download {
+  &:before {
+    content: $eva-download;
+  }
+}
+.eva-droplet {
+  &:before {
+    content: $eva-droplet;
+  }
+}
+.eva-droplet-off {
+  &:before {
+    content: $eva-droplet-off;
+  }
+}
+.eva-edit {
+  &:before {
+    content: $eva-edit;
+  }
+}
+.eva-edit-2 {
+  &:before {
+    content: $eva-edit-2;
+  }
+}
+.eva-email {
+  &:before {
+    content: $eva-email;
+  }
+}
+.eva-expand {
+  &:before {
+    content: $eva-expand;
+  }
+}
+.eva-external-link {
+  &:before {
+    content: $eva-external-link;
+  }
+}
+.eva-eye {
+  &:before {
+    content: $eva-eye;
+  }
+}
+.eva-eye-off {
+  &:before {
+    content: $eva-eye-off;
+  }
+}
+.eva-eye-off-2 {
+  &:before {
+    content: $eva-eye-off-2;
+  }
+}
+.eva-facebook {
+  &:before {
+    content: $eva-facebook;
+  }
+}
+.eva-file {
+  &:before {
+    content: $eva-file;
+  }
+}
+.eva-file-add {
+  &:before {
+    content: $eva-file-add;
+  }
+}
+.eva-file-remove {
+  &:before {
+    content: $eva-file-remove;
+  }
+}
+.eva-file-text {
+  &:before {
+    content: $eva-file-text;
+  }
+}
+.eva-film {
+  &:before {
+    content: $eva-film;
+  }
+}
+.eva-flag {
+  &:before {
+    content: $eva-flag;
+  }
+}
+.eva-flash {
+  &:before {
+    content: $eva-flash;
+  }
+}
+.eva-flash-off {
+  &:before {
+    content: $eva-flash-off;
+  }
+}
+.eva-flip {
+  &:before {
+    content: $eva-flip;
+  }
+}
+.eva-flip-2 {
+  &:before {
+    content: $eva-flip-2;
+  }
+}
+.eva-folder {
+  &:before {
+    content: $eva-folder;
+  }
+}
+.eva-folder-add {
+  &:before {
+    content: $eva-folder-add;
+  }
+}
+.eva-folder-remove {
+  &:before {
+    content: $eva-folder-remove;
+  }
+}
+.eva-funnel {
+  &:before {
+    content: $eva-funnel;
+  }
+}
+.eva-gift {
+  &:before {
+    content: $eva-gift;
+  }
+}
+.eva-github {
+  &:before {
+    content: $eva-github;
+  }
+}
+.eva-globe {
+  &:before {
+    content: $eva-globe;
+  }
+}
+.eva-globe-2 {
+  &:before {
+    content: $eva-globe-2;
+  }
+}
+.eva-globe-3 {
+  &:before {
+    content: $eva-globe-3;
+  }
+}
+.eva-google {
+  &:before {
+    content: $eva-google;
+  }
+}
+.eva-grid {
+  &:before {
+    content: $eva-grid;
+  }
+}
+.eva-hard-drive {
+  &:before {
+    content: $eva-hard-drive;
+  }
+}
+.eva-hash {
+  &:before {
+    content: $eva-hash;
+  }
+}
+.eva-headphones {
+  &:before {
+    content: $eva-headphones;
+  }
+}
+.eva-heart {
+  &:before {
+    content: $eva-heart;
+  }
+}
+.eva-home {
+  &:before {
+    content: $eva-home;
+  }
+}
+.eva-image {
+  &:before {
+    content: $eva-image;
+  }
+}
+.eva-image-2 {
+  &:before {
+    content: $eva-image-2;
+  }
+}
+.eva-inbox {
+  &:before {
+    content: $eva-inbox;
+  }
+}
+.eva-info {
+  &:before {
+    content: $eva-info;
+  }
+}
+.eva-keypad {
+  &:before {
+    content: $eva-keypad;
+  }
+}
+.eva-layers {
+  &:before {
+    content: $eva-layers;
+  }
+}
+.eva-layout {
+  &:before {
+    content: $eva-layout;
+  }
+}
+.eva-link {
+  &:before {
+    content: $eva-link;
+  }
+}
+.eva-link-2 {
+  &:before {
+    content: $eva-link-2;
+  }
+}
+.eva-linkedin {
+  &:before {
+    content: $eva-linkedin;
+  }
+}
+.eva-list {
+  &:before {
+    content: $eva-list;
+  }
+}
+.eva-lock {
+  &:before {
+    content: $eva-lock;
+  }
+}
+.eva-log-in {
+  &:before {
+    content: $eva-log-in;
+  }
+}
+.eva-log-out {
+  &:before {
+    content: $eva-log-out;
+  }
+}
+.eva-map {
+  &:before {
+    content: $eva-map;
+  }
+}
+.eva-maximize {
+  &:before {
+    content: $eva-maximize;
+  }
+}
+.eva-menu {
+  &:before {
+    content: $eva-menu;
+  }
+}
+.eva-menu-2 {
+  &:before {
+    content: $eva-menu-2;
+  }
+}
+.eva-menu-arrow {
+  &:before {
+    content: $eva-menu-arrow;
+  }
+}
+.eva-message-circle {
+  &:before {
+    content: $eva-message-circle;
+  }
+}
+.eva-message-square {
+  &:before {
+    content: $eva-message-square;
+  }
+}
+.eva-mic {
+  &:before {
+    content: $eva-mic;
+  }
+}
+.eva-mic-off {
+  &:before {
+    content: $eva-mic-off;
+  }
+}
+.eva-minimize {
+  &:before {
+    content: $eva-minimize;
+  }
+}
+.eva-minus {
+  &:before {
+    content: $eva-minus;
+  }
+}
+.eva-minus-circle {
+  &:before {
+    content: $eva-minus-circle;
+  }
+}
+.eva-minus-square {
+  &:before {
+    content: $eva-minus-square;
+  }
+}
+.eva-monitor {
+  &:before {
+    content: $eva-monitor;
+  }
+}
+.eva-moon {
+  &:before {
+    content: $eva-moon;
+  }
+}
+.eva-more-horizotnal {
+  &:before {
+    content: $eva-more-horizotnal;
+  }
+}
+.eva-more-vertical {
+  &:before {
+    content: $eva-more-vertical;
+  }
+}
+.eva-move {
+  &:before {
+    content: $eva-move;
+  }
+}
+.eva-music {
+  &:before {
+    content: $eva-music;
+  }
+}
+.eva-navigation {
+  &:before {
+    content: $eva-navigation;
+  }
+}
+.eva-navigation-2 {
+  &:before {
+    content: $eva-navigation-2;
+  }
+}
+.eva-npm {
+  &:before {
+    content: $eva-npm;
+  }
+}
+.eva-options {
+  &:before {
+    content: $eva-options;
+  }
+}
+.eva-options-2 {
+  &:before {
+    content: $eva-options-2;
+  }
+}
+.eva-pantone {
+  &:before {
+    content: $eva-pantone;
+  }
+}
+.eva-paper-plane {
+  &:before {
+    content: $eva-paper-plane;
+  }
+}
+.eva-pause-circle {
+  &:before {
+    content: $eva-pause-circle;
+  }
+}
+.eva-people {
+  &:before {
+    content: $eva-people;
+  }
+}
+.eva-percent {
+  &:before {
+    content: $eva-percent;
+  }
+}
+.eva-person {
+  &:before {
+    content: $eva-person;
+  }
+}
+.eva-person-add {
+  &:before {
+    content: $eva-person-add;
+  }
+}
+.eva-person-delete {
+  &:before {
+    content: $eva-person-delete;
+  }
+}
+.eva-person-done {
+  &:before {
+    content: $eva-person-done;
+  }
+}
+.eva-person-remove {
+  &:before {
+    content: $eva-person-remove;
+  }
+}
+.eva-phone {
+  &:before {
+    content: $eva-phone;
+  }
+}
+.eva-phone-call {
+  &:before {
+    content: $eva-phone-call;
+  }
+}
+.eva-phone-missed {
+  &:before {
+    content: $eva-phone-missed;
+  }
+}
+.eva-phone-off {
+  &:before {
+    content: $eva-phone-off;
+  }
+}
+.eva-pie-chart {
+  &:before {
+    content: $eva-pie-chart;
+  }
+}
+.eva-pie-chart-2 {
+  &:before {
+    content: $eva-pie-chart-2;
+  }
+}
+.eva-pin {
+  &:before {
+    content: $eva-pin;
+  }
+}
+.eva-play-circle {
+  &:before {
+    content: $eva-play-circle;
+  }
+}
+.eva-plus {
+  &:before {
+    content: $eva-plus;
+  }
+}
+.eva-plus-circle {
+  &:before {
+    content: $eva-plus-circle;
+  }
+}
+.eva-plus-square {
+  &:before {
+    content: $eva-plus-square;
+  }
+}
+.eva-power {
+  &:before {
+    content: $eva-power;
+  }
+}
+.eva-pricetags {
+  &:before {
+    content: $eva-pricetags;
+  }
+}
+.eva-printer {
+  &:before {
+    content: $eva-printer;
+  }
+}
+.eva-question-mark {
+  &:before {
+    content: $eva-question-mark;
+  }
+}
+.eva-question-mark-circle {
+  &:before {
+    content: $eva-question-mark-circle;
+  }
+}
+.eva-radio {
+  &:before {
+    content: $eva-radio;
+  }
+}
+.eva-radio-button-off {
+  &:before {
+    content: $eva-radio-button-off;
+  }
+}
+.eva-radio-button-on {
+  &:before {
+    content: $eva-radio-button-on;
+  }
+}
+.eva-recording {
+  &:before {
+    content: $eva-recording;
+  }
+}
+.eva-refresh {
+  &:before {
+    content: $eva-refresh;
+  }
+}
+.eva-repeat {
+  &:before {
+    content: $eva-repeat;
+  }
+}
+.eva-rewind-left {
+  &:before {
+    content: $eva-rewind-left;
+  }
+}
+.eva-rewind-right {
+  &:before {
+    content: $eva-rewind-right;
+  }
+}
+.eva-save {
+  &:before {
+    content: $eva-save;
+  }
+}
+.eva-scissors {
+  &:before {
+    content: $eva-scissors;
+  }
+}
+.eva-search {
+  &:before {
+    content: $eva-search;
+  }
+}
+.eva-settings {
+  &:before {
+    content: $eva-settings;
+  }
+}
+.eva-settings-2 {
+  &:before {
+    content: $eva-settings-2;
+  }
+}
+.eva-shake {
+  &:before {
+    content: $eva-shake;
+  }
+}
+.eva-share {
+  &:before {
+    content: $eva-share;
+  }
+}
+.eva-shield {
+  &:before {
+    content: $eva-shield;
+  }
+}
+.eva-shield-off {
+  &:before {
+    content: $eva-shield-off;
+  }
+}
+.eva-shopping-bag {
+  &:before {
+    content: $eva-shopping-bag;
+  }
+}
+.eva-shopping-cart {
+  &:before {
+    content: $eva-shopping-cart;
+  }
+}
+.eva-shuffle {
+  &:before {
+    content: $eva-shuffle;
+  }
+}
+.eva-shuffle-2 {
+  &:before {
+    content: $eva-shuffle-2;
+  }
+}
+.eva-skip-back {
+  &:before {
+    content: $eva-skip-back;
+  }
+}
+.eva-skip-forward {
+  &:before {
+    content: $eva-skip-forward;
+  }
+}
+.eva-slash {
+  &:before {
+    content: $eva-slash;
+  }
+}
+.eva-smartphone {
+  &:before {
+    content: $eva-smartphone;
+  }
+}
+.eva-speaker {
+  &:before {
+    content: $eva-speaker;
+  }
+}
+.eva-square {
+  &:before {
+    content: $eva-square;
+  }
+}
+.eva-star {
+  &:before {
+    content: $eva-star;
+  }
+}
+.eva-stop-circle {
+  &:before {
+    content: $eva-stop-circle;
+  }
+}
+.eva-sun {
+  &:before {
+    content: $eva-sun;
+  }
+}
+.eva-swap {
+  &:before {
+    content: $eva-swap;
+  }
+}
+.eva-sync {
+  &:before {
+    content: $eva-sync;
+  }
+}
+.eva-text {
+  &:before {
+    content: $eva-text;
+  }
+}
+.eva-thermometer {
+  &:before {
+    content: $eva-thermometer;
+  }
+}
+.eva-thermometer-minus {
+  &:before {
+    content: $eva-thermometer-minus;
+  }
+}
+.eva-thermometer-plus {
+  &:before {
+    content: $eva-thermometer-plus;
+  }
+}
+.eva-toggle-left {
+  &:before {
+    content: $eva-toggle-left;
+  }
+}
+.eva-toggle-right {
+  &:before {
+    content: $eva-toggle-right;
+  }
+}
+.eva-trash {
+  &:before {
+    content: $eva-trash;
+  }
+}
+.eva-trash-2 {
+  &:before {
+    content: $eva-trash-2;
+  }
+}
+.eva-trending-down {
+  &:before {
+    content: $eva-trending-down;
+  }
+}
+.eva-trending-up {
+  &:before {
+    content: $eva-trending-up;
+  }
+}
+.eva-tv {
+  &:before {
+    content: $eva-tv;
+  }
+}
+.eva-twitter {
+  &:before {
+    content: $eva-twitter;
+  }
+}
+.eva-umbrella {
+  &:before {
+    content: $eva-umbrella;
+  }
+}
+.eva-undo {
+  &:before {
+    content: $eva-undo;
+  }
+}
+.eva-unlock {
+  &:before {
+    content: $eva-unlock;
+  }
+}
+.eva-upload {
+  &:before {
+    content: $eva-upload;
+  }
+}
+.eva-video {
+  &:before {
+    content: $eva-video;
+  }
+}
+.eva-video-off {
+  &:before {
+    content: $eva-video-off;
+  }
+}
+.eva-volume-down {
+  &:before {
+    content: $eva-volume-down;
+  }
+}
+.eva-volume-mute {
+  &:before {
+    content: $eva-volume-mute;
+  }
+}
+.eva-volume-off {
+  &:before {
+    content: $eva-volume-off;
+  }
+}
+.eva-volume-up {
+  &:before {
+    content: $eva-volume-up;
+  }
+}
+.eva-wifi {
+  &:before {
+    content: $eva-wifi;
+  }
+}
+.eva-wifi-off {
+  &:before {
+    content: $eva-wifi-off;
+  }
+}
