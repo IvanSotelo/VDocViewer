@@ -61,6 +61,19 @@
           :height="imgStyle.height"
           :style="`margin-top: ${imgStyle.marginTop}px; margin-left: ${imgStyle.marginLeft}px`">
       </div>
+      <PDFViewer
+        v-if="fileType === 'PDF'"
+        v-bind="{url: urlFile}"
+        @document-errored="onDocumentErrored"
+        >
+        <PDFUploader
+          v-if="enableUploader"
+          :documentError="documentError"
+          @updated="urlUpdated"
+          slot="header"
+          class="header-item"
+          />
+      </PDFViewer>
     </div>
   </transition>
 </template>
@@ -68,10 +81,16 @@
 <script>
 import mime from 'mime-types'
 import brokeIcon from '../assets/descarga.svg'
+import PDFUploader from '@/components/PDFUploader.vue'
+import PDFViewer from '@/components/PDFViewer.vue'
+
+// import remote from 'remote-file-size'
 export default {
   name: 'VmViewer',
   components: {
     brokeIcon,
+    PDFUploader,
+    PDFViewer
   },
   props: {
     vmColor: {
@@ -112,6 +131,8 @@ export default {
     }
   },
   data: () => ({
+    documentError: undefined,
+    enableUploader: process.env.VUE_APP_UPLOAD_ENABLED === 'true',
     config: {
       imgMaxWidth: window.innerWidth,
       imgMaxHeight: window.innerHeight,
@@ -183,6 +204,10 @@ export default {
     }
   },
   methods: {
+    urlUpdated (url) {
+      this.documentError = undefined
+      this.urlFile = url
+    },
     onDocumentErrored (e) {
       this.documentError = e.text
     },
