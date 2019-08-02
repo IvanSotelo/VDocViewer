@@ -9,7 +9,7 @@ export default {
   methods: {
     openViewer () {
       this.$viewer.show({
-        urlFile: 'http://www.sgm.gob.mx/pdfs/CHIHUAHUA.pdf'
+        urlFile: 'https://si.ua.es/es/documentos/documentacion/pdf-s/mozilla12-pdf.pdf'
       })
     }
   }
