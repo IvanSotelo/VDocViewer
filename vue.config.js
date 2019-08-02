@@ -4,8 +4,8 @@ const output = {
 
 module.exports = {
   publicPath: process.env.NODE_ENV === 'production'
-  ? '/VDocViewer/'
-  : '/',
+    ? '/VDocViewer/'
+    : '/',
   configureWebpack: {
     devServer: {
       watchOptions: {
