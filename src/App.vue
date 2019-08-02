@@ -9,7 +9,7 @@ export default {
   methods: {
     openViewer () {
       this.$viewer.show({
-        urlFile: 'https://cdn.dribbble.com/users/228320/screenshots/6696074/attachments/1430562/new_campaign_-_step_1-1.png'
+        urlFile: 'http://www.sgm.gob.mx/pdfs/CHIHUAHUA.pdf'
       })
     }
   }

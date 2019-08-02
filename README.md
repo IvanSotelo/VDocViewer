@@ -1,14 +1,14 @@
-# v-doc-viewer
+# VDocViewer
 
 > Vue.js component
 
 
-<a target="_blank" href="https://travis-ci.org/IvanSotelo/V-DocViewer"><img src="https://travis-ci.org/IvanSotelo/V-DocViewer.svg?branch=master"></a>
+<a target="_blank" href="https://travis-ci.org/IvanSotelo/VDocViewer"><img src="https://travis-ci.org/IvanSotelo/VDocViewer.svg?branch=master"></a>
 
 ## Installation
 
 ``` bash
-$ npm install --save v-doc-viewer
+$ npm install --save VDocViewer
 ```
 
 

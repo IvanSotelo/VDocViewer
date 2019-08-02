@@ -13,10 +13,10 @@
           <div class="aux">
             <div class="data">
               <div class="file-name">
-                Texcaz.rar
+                {{ fileName }}
               </div>
               <div class="file-data">
-                PDF · 1.7 MB
+                {{ extension }} · {{ sizeFile }}
               </div>
             </div>
           </div>
@@ -45,7 +45,14 @@
           </div>
         </div>
       </div>
-      <div class="vm-viewer-image">
+      <div class="vm-viewer-uknow" v-if="fileType === 'UKNOW'">
+        <div>
+          <brokeIcon/>
+          <p>We can't preview this file type.</p>
+          <p>Try downloading the file to view it.</p>
+        </div>
+      </div>
+      <div class="vm-viewer-image" v-if="fileType === 'IMG'">
         <img
           v-show="imgVisible"
           :src="urlFile || vmUrlFile"
@@ -59,8 +66,13 @@
 </template>
 
 <script>
+import mime from 'mime-types'
+import brokeIcon from '../assets/descarga.svg'
 export default {
   name: 'VmViewer',
+  components: {
+    brokeIcon,
+  },
   props: {
     vmColor: {
       default: 'primary',
@@ -69,14 +81,6 @@ export default {
     vmActive: {
       default: false,
       type: Boolean
-    },
-    vmFileName: {
-      default: 'File Name',
-      type: String
-    },
-    vmMimeType: {
-      default: 'Image',
-      type: String
     },
     vmSizeFile: {
       default: '0 KB',
@@ -124,8 +128,6 @@ export default {
     zoomFactor: 1,
     isPrompt: true,
     active: false,
-    fileName: null,
-    mimeType: null,
     sizeFile: null,
     urlFile: null
   }),
@@ -138,7 +140,8 @@ export default {
       })
     },
     active () {
-      this.imgLoad(this.imgSize)
+      this.fileType === 'IMG' && this.imgLoad(this.imgSize)
+      this.mifunc()
     }
   },
   created () {
@@ -147,7 +150,7 @@ export default {
       if (!fullscreenEnabled) this.config.fullScreen = false
       this.config.imgMaxWidth = window.innerWidth
       this.config.imgMaxHeight = window.innerHeight
-      this.imgSize()
+      this.fileType === 'IMG' && this.imgSize()
     }
   },
   mounted () {
@@ -159,7 +162,30 @@ export default {
   beforeDestroy () {
     document.removeEventListener('keyup', this.escape)
   },
+  computed: {
+    mimeType () {
+      return mime.lookup(this.urlFile || this.vmUrlFile)
+    },
+    extension () {
+      return mime.extension(this.mimeType).toUpperCase()
+    },
+    fileName () {
+      return this.urlFile.substring(this.urlFile.lastIndexOf('/') + 1)
+    },
+    fileType () {
+      if (this.extension === 'PNG' || this.extension === 'JPEG' || this.extension === 'JPG' || this.extension === 'GIF') {
+        return 'IMG'
+      } else if (this.extension === 'PDF') {
+        return 'PDF'
+      } else {
+        return 'UKNOW'
+      }
+    }
+  },
   methods: {
+    onDocumentErrored (e) {
+      this.documentError = e.text
+    },
     imgLoad (callback) {
       setTimeout(() => {
         const $img = document.querySelector('.vm-viewer-image > img')
@@ -273,7 +299,117 @@ export default {
     },
     escape (e) {
       if (e.keyCode === 27) this.cancelClose()
+    },
+    mifunc () {
+      let t = this
+      fetch(this.urlFile || this.vmUrlFile)
+        .then(res => res.blob()) // Gets the response and returns it as a blob
+        .then(blob => {
+          if (blob.size < 1000) {
+            t.sizeFile = `${blob.size.toFixed(1)} B`
+          } else if (blob.size >= 1000 && blob.size <= 1000000) {
+            t.sizeFile = `${(blob.size / 1000).toFixed(1)} KB`
+          } else {
+            t.sizeFile = `${(blob.size / 1000000).toFixed(1)} MB`
+          }
+        })
     }
   }
 }
 </script>
+
+<style lang="stylus">
+//animations
+.viewer-t-enter, .viewer-t-leave-to /* .viewer-t-leave-active below version 2.1.8 */ {
+  opacity: 0 !important;
+}
+
+ //box viewer
+.viewer-t-enter .vm-viewer/* .fade-leave-active below version 2.1.8 */ {
+  transform: scale(.9) !important;
+
+ }
+.viewer-t-leave-to .vm-viewer/* .fade-leave-active below version 2.1.8 */ {
+  transform: scale(.9) !important;
+  // animation: rebound .3s;
+}
+
+ .con-vm-viewer
+  transition: all .2s;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+  left: 100px;
+  top: 100px;
+  left: 0px;
+  top: 0px;
+  z-index: 11000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  .vm-viewer-dark
+    width: 100%;
+    background:rgb(27, 38, 56);
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    z-index: 10;
+    transition: all .250s ease;
+  .vm-viewer-controlls
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 98px;
+    opacity: 0.85;
+    background-image: linear-gradient(rgb(14, 22, 36), rgba(14, 22, 36, 0));
+    color: rgb(184, 199, 224);
+    font-weight: 500;
+    box-sizing: border-box;
+    z-index: 521;
+    padding: 24px;
+    .info
+      display: flex;
+      .aux
+        font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,'Fira Sans','Droid Sans','Helvetica Neue',sans-serif;
+        color: rgb(159, 176, 204);
+        flex: 1 1 0%;
+        overflow: hidden;
+        .data
+          pointer-events: none;
+          overflow: hidden;
+          .file-name
+            max-width: 100%;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+          .file-data
+            max-width: 100%;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        .options
+          text-align: right;
+          margin-right: 40px;
+          min-width: 200px;
+  .vm-viewer-image
+    width: 100vw;
+    height: 100vh;
+    vertical-align: middle;
+    white-space: nowrap;
+    overflow: auto;
+    z-index: 10
+  .vm-viewer-uknow
+    margin: 0;
+    padding: 0;
+    z-index: 10
+    div
+      text-align: center;
+      color: rgb(184, 199, 224);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+      svg
+        margin-bottom: 10px;
+</style>
