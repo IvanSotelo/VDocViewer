@@ -2,10 +2,10 @@ const output = {
   globalObject: 'this'
 }
 
-const publicPath = process.env.WEBPACK_PUBLIC_PATH || '/'
-
 module.exports = {
-  publicPath,
+  publicPath: process.env.NODE_ENV === 'production'
+  ? '/VDocViewer/'
+  : '/',
   configureWebpack: {
     devServer: {
       watchOptions: {
