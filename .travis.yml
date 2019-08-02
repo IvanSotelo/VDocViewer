@@ -2,7 +2,7 @@ language: node_js
 sudo: required
 dist: trusty
 node_js:
-  - "8.11.1"
+  - "10.15.3"
 
 before_script:
   - export CHROME_BIN=/usr/bin/google-chrome
@@ -14,7 +14,7 @@ before_script:
   - sh -e /etc/init.d/xvfb start
 
 before_install:
-  - npm i -g npm@5.6.0
+  - npm i -g npm@6.10.2
 
 install:
   - npm install
