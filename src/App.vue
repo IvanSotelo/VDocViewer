@@ -9,7 +9,7 @@ export default {
   methods: {
     openViewer () {
       this.$viewer.show({
-        urlFile: 'https://si.ua.es/es/documentos/documentacion/pdf-s/mozilla12-pdf.pdf'
+        urlFile: 'https://ivansotelo.github.io/VDocViewer/compressed.tracemonkey-pldi-09.pdf'
       })
     }
   }
