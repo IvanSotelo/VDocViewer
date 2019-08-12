@@ -149,6 +149,8 @@ export default {
     zoomFactor: 1,
     isPrompt: true,
     active: false,
+    mime: null,
+    name: null,
     sizeFile: null,
     urlFile: null
   }),
@@ -185,13 +187,13 @@ export default {
   },
   computed: {
     mimeType () {
-      return mime.lookup(this.urlFile || this.vmUrlFile)
+      return this.mime || mime.lookup(this.urlFile || this.vmUrlFile)
     },
     extension () {
       return mime.extension(this.mimeType).toUpperCase()
     },
     fileName () {
-      return this.urlFile.substring(this.urlFile.lastIndexOf('/') + 1)
+      return this.name || this.urlFile.substring(this.urlFile.lastIndexOf('/') + 1)
     },
     fileType () {
       if (this.extension === 'PNG' || this.extension === 'JPEG' || this.extension === 'JPG' || this.extension === 'GIF') {
