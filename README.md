@@ -3,26 +3,52 @@
 > Vue.js component
 
 
-<a target="_blank" href="https://travis-ci.org/IvanSotelo/VDocViewer"><img src="https://travis-ci.org/IvanSotelo/VDocViewer.svg?branch=master"></a>
+[![NPMVERSION](https://img.shields.io/npm/v/v-doc-viewer.svg)](http://npmjs.com/package/v-doc-viewer) [![GITHUBSTARS](https://img.shields.io/github/stars/IvanSotelo/VDocViewer.svg)](https://github.com/IvanSotelo/VDocViewer/stargazers) [![BUILD](https://travis-ci.org/IvanSotelo/VDocViewer.svg?branch=master)](https://travis-ci.org/IvanSotelo/VDocViewer) [![DOWNLOADS](https://img.shields.io/npm/dt/v-doc-viewer.svg)](https://npmjs.com/package/v-doc-viewer)
 
 ## Installation
 
 ``` bash
-$ npm install --save VDocViewer
+# Install with npm
+$ npm i -S v-doc-viewer
+
+# or yarn
+$ yarn add v-doc-viewer
 ```
 
 
 ## Usage
 
-``` vue
+``` js
+import VDocViewer from 'v-doc-viewer'
+Vue.use(VDocViewer)
+```
 
+``` vue
+<template>
+  <div class="app">
+    <vm-button @click="openViewer()" color="primary" type="flat"> Open Viewer </vm-button>
+  </div>
+</template>
+
+<script>
+  export default {
+    name: 'demo',
+    methods: {
+      openViewer () {
+        this.$viewer.show({
+          urlFile: 'https://si.ua.es/es/documentos/documentacion/pdf-s/mozilla12-pdf.pdf'
+        })
+      }
+    }
+  };
+</script>
 ```
 
 ## Properties
 
-* `blend-mode` **[String]**
+* `urlFile` **[String]**
 
-  Optional; `difference` by defualt. The blend mode.
+  Requiered; Url from the media.
 
 
 ## License

@@ -3,6 +3,9 @@ const output = {
 }
 
 module.exports = {
+  css: {
+    extract: false
+  },
   publicPath: process.env.NODE_ENV === 'production'
     ? '/VDocViewer/'
     : '/',
@@ -19,5 +22,10 @@ module.exports = {
       .rule('svg')
       .use('file-loader')
       .loader('vue-svg-loader')
+    config.module
+      .rule('images')
+      .use('url-loader')
+      .loader('url-loader')
+      .tap(options => Object.assign(options, { limit: Infinity }))
   }
 }
