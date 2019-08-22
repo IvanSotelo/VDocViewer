@@ -24,20 +24,23 @@
             <vm-button
               :icon="config.fullScreen ? 'collapse-outline' : 'expand-outline'"
               radius
+              :color="color || vmColor"
               type="flat"
               class="vm-viewer-cancel vm-viewer-cancel--icon notranslate"
               @click="fullScreen">
             </vm-button>
             <vm-button
-              icon="cloud-download-outline"
+              :icon="vmDownloadIcon"
               radius
+              :color="color || vmColor"
               type="flat"
               class="vm-viewer-cancel vm-viewer-cancel--icon notranslate"
               @click="download(urlFile || vmUrlFile)">
             </vm-button>
             <vm-button
-              icon="close"
+              :icon="vmCloseIcon"
               radius
+              :color="color || vmColor"
               type="flat"
               class="vm-viewer-cancel vm-viewer-cancel--icon notranslate"
               @click="cancelClose">
@@ -117,16 +120,8 @@ export default {
       default: 'close',
       type: String
     },
-    vmCloseColor: {
-      default: 'gray',
-      type: String
-    },
     vmDownloadIcon: {
       default: 'cloud-download-outline',
-      type: String
-    },
-    vmDownloadColor: {
-      default: 'gray',
       type: String
     }
   },
@@ -148,6 +143,7 @@ export default {
     imgVisible: false,
     zoomFactor: 1,
     isPrompt: true,
+    color: null,
     active: false,
     mime: null,
     name: null,
