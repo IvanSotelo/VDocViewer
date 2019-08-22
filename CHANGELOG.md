@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.4](https://github.com/IvanSotelo/VDocViewer/compare/v0.1.3...v0.1.4) (2019-08-22)
+
+
+### Bug Fixes
+
+* babel ([4b5d4b6](https://github.com/IvanSotelo/VDocViewer/commit/4b5d4b6))
+* color style ([b0bdd5d](https://github.com/IvanSotelo/VDocViewer/commit/b0bdd5d))
+
+
+
 ### [0.1.3](https://github.com/IvanSotelo/VDocViewer/compare/v0.1.2...v0.1.3) (2019-08-13)
 
 
