@@ -63,7 +63,7 @@
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "husky": "^2.2.0",
-    "node-sass": "^4.9.0",
+    "node-sass": "^7.0.0",
     "pug": "^3.0.1",
     "pug-plain-loader": "^1.0.0",
     "sass-loader": "^7.0.1",
